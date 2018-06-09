@@ -60,6 +60,11 @@ a {
     text-decoration: none;
   }
 
+  nav ul li a:visited {
+    color: #fff;
+    text-decoration: none;
+  }
+
   nav img {
     width: 40px;
     vertical-align: middle;
@@ -175,18 +180,21 @@ a {
 }
 
 header {
-  height: 75vh;
+  font-family: 'Montserrat', sans-serif;
+  width: 100%;
+  height: 80vh;
   position: fixed;
   z-index: 100;
   top: 0;
+  text-align: center;
 }
 
 header section {
   z-index: 2000;
   top: 25vh;
   position: fixed;
-  display: inline-block;
   color: white;
+  width: 100%;
 }
 
 header img {
@@ -197,29 +205,48 @@ header img {
 
 header section #title {
   display: block;
-  font-size: 25px;
+  font-size: 30px;
   font-weight: bold;
 }
 
 header section #subtitle {
   display: block;
-  font-size: 18px;
-}
-
-header section #text {
-  display: block;
-  font-size: 15px;
+  font-size: 20px;
 }
 
 div#content {
-  margin-top: 68vh;
+  margin-top: 80vh;
+  padding-top: 5%;
   background: white;
   z-index: 1000;
   position: relative;
+  -webkit-box-shadow: 0 0 15px -1px #000;
+  box-shadow: 0 0 15px -1px #000;
+  height: 100vh;
 }
 
-section#intro {
-  height: 60vh;
-  position: relative;
-  z-index: 200;
+@media screen and (max-width: 799px) {
+  div#content {
+    padding-top: 20%;
+  }
+}
+
+section#about {
+  text-align: center;
+}
+
+@media screen and (min-width: 800px) {
+  #about article {
+    padding-left: 20%;
+    padding-right: 20%;
+  }
+}
+
+#about h4 {
+  color: #595959;
+}
+
+hr.small {
+  width: 15%;
+  border-bottom: 2px solid #444444;
 }
