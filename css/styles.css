@@ -168,12 +168,6 @@ a {
   margin-top: 5px;
 }
 
-.full-page {
-  min-height: 100vh;
-  background: white;
-  padding-top: 70px;
-}
-
 header {
   font-family: 'Montserrat', sans-serif;
   width: 100%;
@@ -217,7 +211,6 @@ div#content {
   position: relative;
   -webkit-box-shadow: 0 0 15px -1px #000;
   box-shadow: 0 0 15px -1px #000;
-  height: 100vh;
 }
 
 @media screen and (max-width: 799px) {
@@ -237,11 +230,45 @@ section#about {
   }
 }
 
-#about h4 {
-  color: #595959;
+section span.title {
+  text-align: center;
+  display: block;
+  color: #001729;
+  font-size: 35px;
+  margin-bottom: 10px;
 }
 
 hr.small {
   width: 15%;
   border-bottom: 2px solid #444444;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+#about p {
+  color: #595959;
+  font-size: 16px;
+}
+
+#services article {
+  margin-bottom: 25px;
+}
+
+#services article img {
+  width: 100px;
+  height: 90px;;
+  margin-left: 13px;
+}
+
+#services article .service-description {
+  font-size: 18px;
+  color: #4c3c61;
+  font-weight: bold;
+  vertical-align: middle;
+  margin-left: 10px;
+}
+
+#services article p {
+  display: block;
+  text-align: center;
 }
