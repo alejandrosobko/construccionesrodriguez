@@ -21,10 +21,6 @@ a {
     width: 100%;
   }
 
-  nav .logo {
-    padding: 20px;
-  }
-
   nav ul {
     list-style: none;
     float: right;
@@ -66,8 +62,7 @@ a {
   }
 
   nav img {
-    width: 40px;
-    vertical-align: middle;
+    margin-top: -4px;
   }
 }
 /* End default navbar */
@@ -98,9 +93,6 @@ a {
 
   .nav > .nav-header > .nav-title {
     display: inline-block;
-    font-size: 22px;
-    color: #fff;
-    padding: 10px 10px 10px 10px;
   }
 
   .nav > #nav-check {
@@ -172,6 +164,9 @@ a {
 }
 /* End mobile navbar */
 
+.nav img {
+  margin-top: 5px;
+}
 
 .full-page {
   min-height: 100vh;
