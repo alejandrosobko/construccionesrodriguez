@@ -24,7 +24,7 @@ a {
   nav ul {
     list-style: none;
     float: right;
-    margin-top: 5px;
+    margin-top: 2px;
   }
 
   nav ul li {
@@ -128,7 +128,7 @@ a {
     height: 250px;
     transition: all 0.3s ease-in;
     overflow-y: hidden;
-    top: 50px;
+    top: 58px;
     left: 0px;
   }
 
@@ -165,7 +165,7 @@ a {
 /* End mobile navbar */
 
 .nav img {
-  margin-top: 5px;
+  margin-top: 3px;
 }
 
 header {
@@ -302,32 +302,25 @@ hr.small {
 
 section#contact {
   background: #f2f2f2;
-  padding: 15px 15px 0 15px;
+  padding: 15px 15px 170px 15px;
+  margin-bottom: 30px;
 }
 
-section#contact .form {
+section#contact article {
   background-color: white;
-  margin-left: 25%;
-  margin-right: 25%;
   padding: 20px;
-  margin-top: 30px;
-  margin-bottom: 5%;
   border-radius: 5px;
   border: 1px solid #e8e8e8;
 }
 
 @media screen and (max-width: 770px) {
-  section#contact .form {
+  article#form {
     margin-left: 0;
     margin-right: 0;
   }
 }
 
-section#contact .form #label {
-  font-weight: 100;
-}
-
-section#contact .form #submit {
+article#form #submit {
   color: white;
   background-color: #fc764d;
   border: 1px #fc764d solid;
@@ -336,9 +329,50 @@ section#contact .form #submit {
   height: 30px;
 }
 
-section#contact .form #submit:hover {
+article#form #submit:hover {
   background-color: #ff4b14;
   border-color: #ff4b14;
+}
+
+.small-title {
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+#cellphone {
+  margin-right: 5%;
+  margin-left: 5%;
+  padding-bottom: 74px !important;
+}
+
+@media screen and (max-width: 767px) {
+  article#cellphone {
+    margin-right: 0;
+    margin-left: 0;
+    margin-bottom: 10px;
+  }
+
+  article#cellphone #numbers {
+    text-align: center;
+  }
+}
+
+article#cellphone #numbers {
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-top: 20px;
+}
+
+article#cellphone .number-container {
+  margin-bottom: 10px;
+}
+
+article#cellphone img {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
 }
 
 footer {
