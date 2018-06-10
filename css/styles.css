@@ -299,3 +299,50 @@ hr.small {
   height: 30em;
 }
 */
+
+section#contact {
+  background: #f2f2f2;
+  padding: 15px 15px 0 15px;
+}
+
+section#contact .form {
+  background-color: white;
+  margin-left: 25%;
+  margin-right: 25%;
+  padding: 20px;
+  margin-top: 30px;
+  margin-bottom: 5%;
+  border-radius: 5px;
+  border: 1px solid #e8e8e8;
+}
+
+@media screen and (max-width: 770px) {
+  section#contact .form {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+section#contact .form #label {
+  font-weight: 100;
+}
+
+section#contact .form #submit {
+  color: white;
+  background-color: #fc764d;
+  border: 1px #fc764d solid;
+  border-radius: 3px;
+  width: 90px;
+  height: 30px;
+}
+
+section#contact .form #submit:hover {
+  background-color: #ff4b14;
+  border-color: #ff4b14;
+}
+
+footer {
+  text-align: center;
+  background-color: white;
+  padding: 20px 20px 0 20px;
+}

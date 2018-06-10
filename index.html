@@ -140,9 +140,41 @@
 
 
     <section id="contact" class="row">
+      <div class="form col-sm-6 col-xs-12">
+        <span class="title">Contacto</span>
+
+        <form action="https://formspree.io/alejandro.sobko@gmail.com" method="POST">
+          <div class="col-sm-6">
+            <div class="form-group">
+              <input type="text" class="form-control" name="name" id="name" placeholder="Nombre y apellido">
+            </div>
+            <div class="form-group">
+              <input type="email" class="form-control" name="_replyto" id="_replyto" placeholder="Correo electrónico">
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control" name="subject" id="subject" placeholder="Asunto del mensaje">
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="form-group">
+              <textarea name="body" class="form-control" id="body" cols="28" rows="6" placeholder="Escribí tu mensaje"></textarea>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <input type="submit" value="Enviar" id="submit">
+          </div>
+        </form>
+      </div>
     </section>
 
-    <footer></footer>
+    <footer class="col-xs-12">
+      <p>
+        © Copyright 2018 Construcciones Rodriguez. All rights reserved
+      </p>
+      <p>
+        Website by <a href="https://alejandrosobko.github.io" target="_blank">Alejandro Sobko</a>
+      </p>
+    </footer>
   </div>
 
 
