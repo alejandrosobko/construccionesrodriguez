@@ -235,7 +235,7 @@ section span.title {
   display: block;
   color: #001729;
   font-size: 35px;
-  margin-bottom: 10px;
+  margin-bottom: 30px;
 }
 
 hr.small {
@@ -264,11 +264,38 @@ hr.small {
   font-size: 18px;
   color: #4c3c61;
   font-weight: bold;
-  vertical-align: middle;
-  margin-left: 10px;
+  margin-top: 30px;
 }
 
 #services article p {
   display: block;
   text-align: center;
 }
+
+@media screen and (max-width: 990px) {
+  #services article img {
+    margin-left: -5px;
+  }
+
+  #services article {
+    text-align: center;
+  }
+}
+
+.service-more {
+  text-align: center;
+}
+
+
+/*
+#tinglado-background {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+#tinglado-background div {
+  background: url("../images/tinglado_background.jpg") fixed center no-repeat;
+  background-size: cover;
+  height: 30em;
+}
+*/
