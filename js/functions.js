@@ -5,7 +5,7 @@ $(document).on('click', '.nav li', function (event) {
     var href = link.attr('href');
 
     $('html, body').animate({
-        scrollTop: $(href).offset().top
+        scrollTop: $(href).offset().top - 100
     }, 500);
 
     $('#nav-check').prop('checked', false);
