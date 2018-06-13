@@ -383,6 +383,10 @@ article#form #submit:hover {
   border-color: #ff4b14;
 }
 
+article#form textarea {
+  height: 133px;
+}
+
 .small-title {
   font-size: 16px;
   font-weight: bold;
