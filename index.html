@@ -8,16 +8,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" media="screen" href="css/styles.css" />
   <link href="css/bootstrap.min.css" rel="stylesheet" >
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400" rel="stylesheet">
 </head>
 <body>
   <!-- menu for large screens -->
-  <nav id="default-navbar">
-    <div class="logo col-sm-1"><a href="#top"><img src="images/logo.png" alt="logo"></a></div>
-    <div class="col-sm-11">
+  <nav id="default-navbar" class="nav">
+    <div class="logo col-sm-2"><a><img src="images/logo.png" alt="logo"></a></div>
+    <div class="col-sm-10">
       <ul>
-        <li class="section"><a href="#about">Empresa</a></li>
+        <li class="section"><a href="#about">Sobre mí</a></li>
         <li class="section"><a href="#services">Servicios</a></li>
-        <li class="section"><a href="#experience">Experiencia</a></li>
         <li class="section"><a href="#contact">Contacto</a></li>
       </ul>
     </div>
@@ -27,8 +27,8 @@
   <!-- menu for small screens -->
   <div class="nav">
     <div class="nav-header">
-      <div class="nav-title">
-        <a href="#top"><img src="images/logo.png" alt="logo"></a>
+      <div class="nav-title logo">
+        <a><img src="images/logo.png" alt="logo"></a>
       </div>
     </div>
     <div class="nav-btn">
@@ -41,9 +41,8 @@
     <input type="checkbox" id="nav-check">
     <div class="nav-links">
       <ul>
-        <li class="section"><a href="#about">Empresa</a></li>
+        <li class="section"><a href="#about">Sobre mí</a></li>
         <li class="section"><a href="#services">Servicios</a></li>
-        <li class="section"><a href="#experience">Experiencia</a></li>
         <li class="section"><a href="#contact">Contacto</a></li>
       </ul>
     </div>
@@ -53,45 +52,164 @@
   <header>
     <img src="images/header.jpg" alt="header">
     <section>
-      <span id="title">Construcciones de calidad</span>
-      <span id="subtitle">40 años de experiencia</span>
-      <span id="body">Trabajos responsables de todo tipo, con herramientas de calidad que aseguran una satisfacción en el cliente</span>
+      <span id="title">CONSTRUCCIONES DE CALIDAD</span>
+      <em id="subtitle">30 AÑOS DE EXPERIENCIA</em>
     </section>
   </header>
 
-  <div id="content">
-    <section id="intro">
+  <div id="content" class="container-fluid">
+    <section id="about" >
       <article>
-        <h1>What is the Law of Attraction</h1>
-        <h4>
-          The law of attraction is a natural law. It always matches you to the right things, places and conditions. The match corresponds to your habitual way of thinking, speaking and acting. You can create any level of success you want. You only need to understand how to produce desired results.
-        </h4>
+        <div class="section-title">
+          <span class="title">Juan Carlos Rodriguez</span>
+          <hr class="special">
+        </div>
+        <p>
+          Dediqué toda mi vida a la construcción, desde arreglos, modificaciones hasta construcciones completas. Realicé construcciones de casas, techos, piscinas, parrillas, tinglados, arreglos generales, pintura y cualquier otro tipo de mejoras.
+        </p>
+        <p>
+          Mi experiencia y clientes garantizan los trabajos que realizo.
+        </p>
       </article>
     </section>
-    <section id="intro">
-      <article>
-        <h1>What is the Law of Attraction</h1>
-        <h4>
-          The law of attraction is a natural law. It always matches you to the right things, places and conditions. The match corresponds to your habitual way of thinking, speaking and acting. You can create any level of success you want. You only need to understand how to produce desired results.
-        </h4>
+
+
+    <section id="services" class="container">
+      <div class="section-title">
+        <span class="title">Servicios</span>
+        <hr class="special">
+      </div>
+      <div class="row">
+        <article class="col-md-4 col-xs-12">
+          <div class="img-container col-xs-12 col-md-5">
+            <img src="images/casa_logo.jpg" alt="casa">
+          </div>
+          <div class="col-xs-12 col-md-7 service-description">
+            <span>CONSTRUCCIONES</span>
+          </div>
+          <p class="col-xs-12">
+            Construcción y reparaciones en general, ofreciendo servicios profesionales ajusables a las necesidades de los clientes.
+            Construcciones completas de casas, galpones, reparaciones, ampliaciones o cualquier pedido personal.
+          </p>
+          <div class="service-more col-xs-12"><a href="construccion.html">Ver más</a></div>
+        </article>
+        <article class="col-md-4 col-xs-12">
+          <div class="img-container col-xs-12 col-md-5">
+            <img src="images/tinglados_logo.jpg" alt="tinglados">
+          </div>
+          <div class="col-xs-12 col-md-7 service-description">
+            <span>TINGLADOS</span>
+          </div>
+          <p class="col-xs-12">
+            Fabricación y montaje de la estructura metálica. Techos parabólicos y a dos aguas. Desarrollo según la necesidad y pedido.
+          </p>
+          <div class="service-more col-xs-12"><a href="construccion.html">Ver más</a></div>
+        </article>
+        <article class="col-md-4 col-xs-12">
+          <div class="img-container col-xs-12 col-md-5">
+            <img src="images/piscina_logo.png" alt="plomería">
+          </div>
+          <div class="col-xs-12 col-md-7 service-description">
+            <span>PISCINAS</span>
+          </div>
+          <p class="col-xs-12">
+            Construcción de piscinas de hormigón armado. El modelo de la misma es de acuerdo a las necesidades de cada cliente, ofreciendo variantes de dimensiones, formas, equipamiento y calidad de materiales.
+          </p>
+          <div class="service-more col-xs-12"><a href="construccion.html">Ver más</a></div>
+        </article>
+      </div>
+      <div class="row">
+        <article class="col-md-4 col-xs-12">
+          <div class="img-container col-xs-12 col-md-5">
+            <img src="images/tejas_logo.png" alt="tejas">
+          </div>
+          <div class="col-xs-12 col-md-7 service-description">
+            <span>TECHOS</span>
+          </div>
+          <p class="col-xs-12">
+            Construcción y reparación de todo techos, ya sea tejas francesas o coloniales y chapa.
+          </p>
+        </article>
+        <article class="col-md-4 col-xs-12">
+          <div class="img-container col-xs-12 col-md-5">
+            <img src="images/pintura_logo.jpg" alt="pintura">
+          </div>
+          <div class="col-xs-12 col-md-7 service-description">
+            <span>PINTURA EN ALTURA</span>
+          </div>
+          <p class="col-xs-12">
+            Trabajos de pintura interior y exterior para domicilios, edificios, oficinas, locales, etc.
+            También pintura en altura y revestimiento plastico texturado.
+          </p>
+        </article>
+        <article class="col-md-4 col-xs-12">
+          <div class="img-container col-xs-12 col-md-5">
+            <img src="images/plomeria_logo.png" alt="plomería">
+          </div>
+          <div class="col-xs-12 col-md-7 service-description">
+            <span>PLOMERÍA Y GAS</span>
+          </div>
+          <p class="col-xs-12">
+            Plomería y gas en general. Reparación de filtraciones, instalación y cambio de cañerías.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="row">
+      <div class="section-title container">
+        <span class="title">Contacto</span>
+        <hr class="special">
+      </div>
+      <article id="cellphone" class="col-xs-12 col-sm-4">
+        <div class="small-title">
+          <span>Comunicate por estos medios</span>
+        </div>
+
+        <div id="numbers">
+          <div class="number-container"><img src="images/whatsapp-icon.png" alt="whatsapp"> (011) 1199999999</div>
+          <div class="number-container"><img src="images/whatsapp-icon.png" alt="whatsapp"> (011) 1188888888</div>
+          <div class="number-container"><img src="images/telephone-icon.jpeg" alt="telephone"> (011) 42788888</div>
+        </div>
+      </article>
+
+      <article id="form" class="form col-xs-12 col-sm-6">
+        <div class="small-title">
+          <span>Pedí un presupuesto sin cargo</span>
+        </div>
+
+        <form action="https://formspree.io/alejandro.sobko@gmail.com" method="POST">
+          <div class="col-sm-6">
+            <div class="form-group">
+              <input type="text" class="form-control" name="name" id="name" placeholder="Nombre y apellido">
+            </div>
+            <div class="form-group">
+              <input type="email" class="form-control" name="_replyto" id="_replyto" placeholder="Correo electrónico">
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control" name="subject" id="subject" placeholder="Asunto del mensaje">
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="form-group">
+              <textarea name="body" class="form-control" id="body" cols="28" rows="6" placeholder="Escribí tu mensaje"></textarea>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <input type="submit" value="Enviar" id="submit">
+          </div>
+        </form>
       </article>
     </section>
-    <section id="intro">
-      <article>
-        <h1>What is the Law of Attraction</h1>
-        <h4>
-          The law of attraction is a natural law. It always matches you to the right things, places and conditions. The match corresponds to your habitual way of thinking, speaking and acting. You can create any level of success you want. You only need to understand how to produce desired results.
-        </h4>
-      </article>
-    </section>
-    <section id="intro">
-      <article>
-        <h1>What is the Law of Attraction</h1>
-        <h4>
-          The law of attraction is a natural law. It always matches you to the right things, places and conditions. The match corresponds to your habitual way of thinking, speaking and acting. You can create any level of success you want. You only need to understand how to produce desired results.
-        </h4>
-      </article>
-    </section>
+
+    <footer class="col-xs-12">
+      <p>
+        © Copyright 2018 Construcciones Rodriguez. All rights reserved
+      </p>
+      <p>
+        Website by <a href="https://alejandrosobko.github.io" target="_blank">Alejandro Sobko</a>
+      </p>
+    </footer>
   </div>
 
 

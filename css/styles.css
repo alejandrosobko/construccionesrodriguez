@@ -21,14 +21,10 @@ a {
     width: 100%;
   }
 
-  nav .logo {
-    padding: 20px;
-  }
-
   nav ul {
     list-style: none;
     float: right;
-    margin-top: 5px;
+    margin-top: 2px;
   }
 
   nav ul li {
@@ -60,9 +56,13 @@ a {
     text-decoration: none;
   }
 
+  nav ul li a:visited {
+    color: #fff;
+    text-decoration: none;
+  }
+
   nav img {
-    width: 40px;
-    vertical-align: middle;
+    margin-top: -4px;
   }
 }
 /* End default navbar */
@@ -93,9 +93,6 @@ a {
 
   .nav > .nav-header > .nav-title {
     display: inline-block;
-    font-size: 22px;
-    color: #fff;
-    padding: 10px 10px 10px 10px;
   }
 
   .nav > #nav-check {
@@ -131,7 +128,7 @@ a {
     height: 250px;
     transition: all 0.3s ease-in;
     overflow-y: hidden;
-    top: 50px;
+    top: 58px;
     left: 0px;
   }
 
@@ -167,26 +164,56 @@ a {
 }
 /* End mobile navbar */
 
-
-.full-page {
-  min-height: 100vh;
-  background: white;
-  padding-top: 70px;
+.nav img {
+  margin-top: 3px;
 }
 
+@keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+
 header {
-  height: 75vh;
+  font-family: 'Montserrat', sans-serif;
+  width: 100%;
+  height: 80vh;
   position: fixed;
   z-index: 100;
   top: 0;
+  text-align: center;
 }
 
 header section {
   z-index: 2000;
   top: 25vh;
   position: fixed;
-  display: inline-block;
   color: white;
+  width: 100%;
 }
 
 header img {
@@ -197,29 +224,221 @@ header img {
 
 header section #title {
   display: block;
-  font-size: 25px;
+  font-size: 40px;
   font-weight: bold;
+  -webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
+     -moz-animation: fadein 1s; /* Firefox < 16 */
+      -ms-animation: fadein 1s; /* Internet Explorer */
+       -o-animation: fadein 1s; /* Opera < 12.1 */
+          animation: fadein 1s;
 }
 
 header section #subtitle {
   display: block;
-  font-size: 18px;
+  font-size: 25px;
+  -webkit-animation: fadein 4s; /* Safari, Chrome and Opera > 12.1 */
+     -moz-animation: fadein 4s; /* Firefox < 16 */
+      -ms-animation: fadein 4s; /* Internet Explorer */
+       -o-animation: fadein 4s; /* Opera < 12.1 */
+          animation: fadein 4s;
 }
 
-header section #text {
-  display: block;
-  font-size: 15px;
+@media screen and (max-width: 799px) {
+  header section #title {
+    font-size: 30px;
+  }
+  header section #subtitle {
+    font-size: 20px;
+  }
 }
 
 div#content {
-  margin-top: 68vh;
+  margin-top: 80vh;
   background: white;
   z-index: 1000;
   position: relative;
+  -webkit-box-shadow: 0 0 15px -1px #000;
+  box-shadow: 0 0 15px -1px #000;
 }
 
-section#intro {
-  height: 60vh;
-  position: relative;
-  z-index: 200;
+@media screen and (max-width: 799px) {
+  div#content {
+    padding-top: 20%;
+  }
+}
+
+#content section {
+  margin-top: 100px;
+}
+
+section#about {
+  text-align: center;
+}
+
+@media screen and (min-width: 800px) {
+  #about article {
+    padding-left: 20%;
+    padding-right: 20%;
+  }
+}
+
+.section-title {
+  margin-bottom: 80px;
+  text-align: center;
+}
+
+section span.title {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  font-size: 35px;
+  display: block;
+  color: #001729;
+}
+
+hr.special {
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+  width: 80%;
+}
+
+#about p {
+  color: #595959;
+  font-size: 16px;
+}
+
+#services article {
+  margin-bottom: 50px;
+}
+
+#services article img {
+  width: 100px;
+  height: 90px;;
+  margin-left: 13px;
+}
+
+#services article .service-description {
+  font-size: 18px;
+  color: #4c3c61;
+  font-weight: bold;
+  margin-top: 30px;
+}
+
+#services article p {
+  margin-top: 10px;
+  display: block;
+  text-align: center;
+}
+
+@media screen and (max-width: 990px) {
+  #services article img {
+    margin-left: -5px;
+  }
+
+  #services article {
+    text-align: center;
+  }
+}
+
+.service-more {
+  text-align: center;
+}
+
+
+/*
+#tinglado-background {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+#tinglado-background div {
+  background: url("../images/tinglado_background.jpg") fixed center no-repeat;
+  background-size: cover;
+  height: 30em;
+}
+*/
+
+section#contact {
+  background: #f2f2f2;
+  padding: 15px 15px 170px 15px;
+  margin-bottom: 30px;
+}
+
+section#contact article {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  border: 1px solid #e8e8e8;
+}
+
+@media screen and (max-width: 770px) {
+  article#form {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+article#form #submit {
+  color: white;
+  background-color: #fc764d;
+  border: 1px #fc764d solid;
+  border-radius: 3px;
+  width: 90px;
+  height: 30px;
+}
+
+article#form #submit:hover {
+  background-color: #ff4b14;
+  border-color: #ff4b14;
+}
+
+article#form textarea {
+  height: 133px;
+}
+
+.small-title {
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+#cellphone {
+  margin-right: 5%;
+  margin-left: 5%;
+  padding-bottom: 74px !important;
+}
+
+@media screen and (max-width: 767px) {
+  article#cellphone {
+    margin-right: 0;
+    margin-left: 0;
+    margin-bottom: 10px;
+  }
+
+  article#cellphone #numbers {
+    text-align: center;
+  }
+}
+
+article#cellphone #numbers {
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-top: 20px;
+}
+
+article#cellphone .number-container {
+  margin-bottom: 10px;
+}
+
+article#cellphone img {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+footer {
+  text-align: center;
+  background-color: white;
+  padding: 20px 20px 0 20px;
 }
