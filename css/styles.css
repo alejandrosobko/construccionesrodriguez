@@ -267,7 +267,7 @@ div#content {
   }
 }
 
-#content section {
+#content section { /* TODO: Esto hay que borrarlo, usando height: 100vh ya no lo necesito. Ahora está solo para #about */
   margin-top: 100px;
 }
 
@@ -303,10 +303,30 @@ hr.special {
   width: 80%;
 }
 
+.custom-orange-border {
+  width: 7%;
+}
+.custom-orange-border div {
+  border-bottom: 3px solid #ec592c;
+  border-left: 3px solid #ec592c;
+  margin-bottom: 50px;
+}
+
+.custom-orange-border span {
+  margin-left: 10px;
+}
+
 #about p {
   color: #595959;
   font-size: 16px;
 }
+
+@media screen and (min-width: 800px) {
+  section#services {
+    height: 100vh;
+  }
+}
+
 
 #services article {
   margin-bottom: 50px;
@@ -341,10 +361,37 @@ hr.special {
   }
 }
 
-.service-more {
-  text-align: center;
+#services-details article {
+  height: 100vh;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 50px;
 }
 
+#services-details #construccion {
+  background-color: #e8e8e8;
+}
+
+#services-details #tinglados {
+  background-color: #23235d;
+}
+
+#services-details #tinglados span {
+  color: white;
+}
+
+#services-details #piscinas {
+  background-color: white;
+}
+
+#services-details .info p {
+  color: white;
+  font-family: "sans-serif";
+  font-weight: 300;
+  font-size: 3rem;
+  line-height: 3.7rem;
+  letter-spacing: 1px;
+}
 
 /*
 #tinglado-background {
@@ -456,4 +503,24 @@ footer {
   text-align: center;
   background-color: white;
   padding: 20px 20px 0 20px;
+}
+
+.carousel-inner > .item > img {
+  margin: 0 auto;
+}
+
+.carousel-image {
+  width: 700px;
+}
+.carousel-inner {
+  width: 100%;
+  height: 400px !important;
+}
+
+.carousel-div {
+  margin-top: 40px;
+}
+
+.see-more {
+  text-align: center;
 }
