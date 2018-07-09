@@ -362,10 +362,10 @@ hr.special {
 }
 
 #services-details article {
-  height: 100vh;
   padding-left: 10%;
   padding-right: 10%;
   padding-top: 50px;
+  padding-bottom: 25px;
 }
 
 #services-details #construccion {
@@ -392,19 +392,6 @@ hr.special {
   line-height: 3.7rem;
   letter-spacing: 1px;
 }
-
-/*
-#tinglado-background {
-  margin-left: -15px;
-  margin-right: -15px;
-}
-
-#tinglado-background div {
-  background: url("../images/tinglado_background.jpg") fixed center no-repeat;
-  background-size: cover;
-  height: 30em;
-}
-*/
 
 section#contact {
   background: #16203a;
@@ -523,4 +510,8 @@ footer {
 
 .see-more {
   text-align: center;
+}
+
+.carousel-inner {
+  height: auto !important;
 }
