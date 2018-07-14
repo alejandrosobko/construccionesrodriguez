@@ -304,7 +304,7 @@ hr.special {
 }
 
 .custom-orange-border {
-  width: 7%;
+  width: 60px;
 }
 .custom-orange-border div {
   border-bottom: 3px solid #ec592c;
@@ -321,7 +321,7 @@ hr.special {
   font-size: 16px;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1020px) {
   section#services {
     height: 100vh;
   }
@@ -368,6 +368,12 @@ hr.special {
   padding-bottom: 25px;
 }
 
+@media screen and (min-width: 1020px) {
+  #services-details article {
+    height: 100vh;
+  }
+}
+
 #services-details #construccion {
   background-color: #e8e8e8;
 }
@@ -389,8 +395,6 @@ hr.special {
   font-family: "sans-serif";
   font-weight: 300;
   font-size: 20px;
-  line-height: 3.7rem;
-  letter-spacing: 1px;
 }
 
 section#contact {
@@ -492,26 +496,52 @@ footer {
   padding: 20px 20px 0 20px;
 }
 
+/* Carousel */
 .carousel-inner > .item > img {
   margin: 0 auto;
+  border-radius: 10px;
+  height: 400px !important;
 }
 
-.carousel-image {
-  width: 700px;
+@media screen and (min-width: 1500px) {
+  .carousel-inner > .item > img {
+    height: 600px !important;
+  }
 }
-.carousel-inner {
-  width: 100%;
-  height: 400px !important;
+
+.carousel-img {
+  width: 700px;
 }
 
 .carousel-div {
   margin-top: 40px;
 }
 
-.see-more {
-  text-align: center;
+.carousel-inner {
+  width: 100%;
 }
 
-.carousel-inner {
-  height: auto !important;
+@media screen and (min-width: 470px) and (max-width: 770px) {
+  .carousel-inner > .item > img { height: 400px !important; }
+  .carousel-inner               { height: 400px !important; }
+}
+
+@media screen and (min-width: 771px) and (max-width: 880px) {
+  .carousel-inner > .item > img { height: 300px !important; }
+  .carousel-inner               { height: 300px !important; }
+}
+
+@media screen and (max-width: 530px) {
+  .carousel-inner > .item > img { height: 300px !important; }
+  .carousel-inner               { height: 300px !important; }
+}
+
+@media screen and (max-width: 380px) {
+  .carousel-inner > .item > img { height: 250px !important; }
+  .carousel-inner               { height: 250px !important; }
+}
+/* Fin Carousel */
+
+.see-more {
+  text-align: center;
 }
