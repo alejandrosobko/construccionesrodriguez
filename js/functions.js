@@ -23,3 +23,12 @@ $(".logo").click(function() {
   $("html, body").animate({ scrollTop: 0 }, "slow");
   return false;
 });
+
+
+$(function() {
+    $('.pop').on('click', function(event) {
+        event.preventDefault();
+        $('.imagepreview').attr('src', $(this).find('img').attr('src'));
+        $('#imagemodal').modal('show');
+    });
+});
