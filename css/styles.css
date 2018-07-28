@@ -546,3 +546,12 @@ footer {
 .modal-dialog {
   top: 20%;
 }
+
+.modal-content {
+  height: 330px;
+}
+
+.modal-body {
+  padding: 2px !important;
+  height: 120px;
+}
