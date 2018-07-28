@@ -548,17 +548,20 @@ footer {
 }
 
 .modal-content {
-  height: 445px;
+  height: 350px;
 }
 
 .modal-body {
   padding: 2px !important;
-  height: 400px !important;
 }
 
 .modal-content .carousel-img {
-  height: 400px !important;
+  height: 300px !important;
 }
 
-.modal-content .carousel-inner > .item > img { height: 500px !important; }
-.modal-content .carousel-inner               { height: 500px !important; }
+.modal-content .carousel {
+  height: 300px !important;
+}
+
+.modal-content .carousel-inner > .item > img { height: 400px !important; }
+.modal-content .carousel-inner               { height: 400px !important; }
