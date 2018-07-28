@@ -36,10 +36,19 @@ $(function() {
     $('.pop').on('click', function(event) {
         event.preventDefault();
         let $images = $(event.currentTarget).parents('.carousel-inner').find('img');
-        $('.modal-content').find('img').each(function(index, img) {
-            img.src = $images[index].src;
+        let $carouselItem = '<div class="item"> \
+                                 <img class="carousel-img center-block" src="" alt="imagen"> \
+                                 <div class="carousel-caption"></div> \
+                             </div> ';
+
+        let $carousel = $('.modal-content .carousel-inner');
+        $carousel.html(''); // clear previous images
+        $images.each(function(_index, img) {
+            $carousel.append($carouselItem);
+            $carousel.find('img:last').attr('src', img.src);
         });
 
+        $carousel.find('.item')[0].className = 'item active';
         $('#imagemodal').modal('show');
     });
 });

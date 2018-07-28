@@ -548,7 +548,7 @@ footer {
 }
 
 .modal-content {
-  height: 350px;
+  height: 400px;
 }
 
 .modal-body {
@@ -560,8 +560,8 @@ footer {
 }
 
 .modal-content .carousel {
-  height: 300px !important;
+  height: 355px !important;
 }
 
-.modal-content .carousel-inner > .item > img { height: 400px !important; }
-.modal-content .carousel-inner               { height: 400px !important; }
+.modal-content .carousel-inner > .item > img { height: 350px !important; }
+.modal-content .carousel-inner               { height: 350px !important; }
