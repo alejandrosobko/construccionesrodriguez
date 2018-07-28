@@ -548,10 +548,17 @@ footer {
 }
 
 .modal-content {
-  height: 330px;
+  height: 445px;
 }
 
 .modal-body {
   padding: 2px !important;
-  height: 120px;
+  height: 400px !important;
 }
+
+.modal-content .carousel-img {
+  height: 400px !important;
+}
+
+.modal-content .carousel-inner > .item > img { height: 500px !important; }
+.modal-content .carousel-inner               { height: 500px !important; }
