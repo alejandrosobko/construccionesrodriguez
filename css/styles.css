@@ -290,7 +290,7 @@ section#about {
 
 section span.title {
   font-family: 'Montserrat', sans-serif;
-  font-weight: 300;
+  font-weight: 500;
   font-size: 35px;
   display: block;
   color: #001729;
@@ -379,7 +379,7 @@ hr.special {
 }
 
 #services-details #tinglados {
-  background-color: #23235d;
+  background-color: #003057;
 }
 
 #services-details #tinglados span {
@@ -387,7 +387,7 @@ hr.special {
 }
 
 #services-details #piscinas {
-  background-color: white;
+  background-color: #e8e8e8;
 }
 
 #services-details .info p {
