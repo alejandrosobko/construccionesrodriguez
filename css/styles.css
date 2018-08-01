@@ -565,3 +565,25 @@ footer {
 
 .modal-content .carousel-inner > .item > img { height: 350px !important; }
 .modal-content .carousel-inner               { height: 350px !important; }
+
+.carousel-control {
+  background: transparent !important;
+}
+
+
+/* Modal opened on high screen */
+@media screen and (min-width: 1020px) {
+  .modal-dialog {
+    width: 1000px !important;
+  }
+
+  .modal-content { height: 600px; }
+  .modal-content .carousel-inner > .item > img { height: 650px !important; }
+  .modal-content .carousel-inner               { height: 550px !important; }
+  .modal-content .carousel { height: 550px !important; }
+
+  .modal-content .carousel-img {
+    height: 1000px !important;
+    width: 1000px !important;
+  }
+}
