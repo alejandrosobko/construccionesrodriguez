@@ -3,7 +3,7 @@ var goToSection = function(link) {
 
     $('html, body').animate({
         scrollTop: $(href).offset().top - 55
-    }, 500);
+    }, 2000);
 }
 
 
