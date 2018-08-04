@@ -57,13 +57,11 @@ $(function() {
 // handle key press
 $(document).keydown(function(e) {
     if (e.keyCode === 37) {
-       // Previous
-       $(".carousel-control.left").click();
+       $(e.target).find(".carousel-control.left").click();
        return false;
     }
     if (e.keyCode === 39) {
-       // Next
-       $(".carousel-control.right").click();
+       $(e.target).find(".carousel-control.right").click();
        return false;
     }
 });
