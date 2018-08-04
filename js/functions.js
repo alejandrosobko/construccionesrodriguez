@@ -73,7 +73,7 @@ $(document).keydown(function(e) {
 window.sr = ScrollReveal({ reset: true });
 
 // Customizing a reveal set
-const revealOptions = { reset: false, duration: 700, delay: 300, easing: 'cubic-bezier(0.6, 0.2, 0.1, 1)'};
+const revealOptions = { reset: false, duration: 500, delay: 100, easing: 'cubic-bezier(0.6, 0.2, 0.1, 1)'};
 sr.reveal('#services', revealOptions);
 sr.reveal('#services-details article', revealOptions);
 sr.reveal('#contact', revealOptions);
