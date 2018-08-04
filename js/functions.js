@@ -2,7 +2,7 @@ var goToSection = function(link) {
     var href = link.attr('href');
 
     $('html, body').animate({
-        scrollTop: $(href).offset().top - 55
+        scrollTop: $(href).offset().top - 40
     }, 2000);
 }
 
