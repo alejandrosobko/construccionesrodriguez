@@ -267,7 +267,7 @@ div#content {
   }
 }
 
-#content section {
+#content section { /* TODO: Esto hay que borrarlo, usando height: 100vh ya no lo necesito. Ahora está solo para #about */
   margin-top: 100px;
 }
 
@@ -283,13 +283,14 @@ section#about {
 }
 
 .section-title {
+  margin-top: 50px;
   margin-bottom: 80px;
   text-align: center;
 }
 
 section span.title {
   font-family: 'Montserrat', sans-serif;
-  font-weight: 300;
+  font-weight: 500;
   font-size: 35px;
   display: block;
   color: #001729;
@@ -302,10 +303,30 @@ hr.special {
   width: 80%;
 }
 
+.custom-orange-border {
+  width: 60px;
+}
+.custom-orange-border div {
+  border-bottom: 3px solid #ec592c;
+  border-left: 3px solid #ec592c;
+  margin-bottom: 50px;
+}
+
+.custom-orange-border span {
+  margin-left: 10px;
+}
+
 #about p {
   color: #595959;
   font-size: 16px;
 }
+
+@media screen and (min-width: 1020px) {
+  section#services {
+    height: 100vh;
+  }
+}
+
 
 #services article {
   margin-bottom: 50px;
@@ -340,28 +361,60 @@ hr.special {
   }
 }
 
-.service-more {
-  text-align: center;
+#services-details article {
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 50px;
+  padding-bottom: 25px;
 }
 
-
-/*
-#tinglado-background {
-  margin-left: -15px;
-  margin-right: -15px;
+@media screen and (min-width: 1020px) {
+  #services-details article {
+    height: 100vh;
+  }
 }
 
-#tinglado-background div {
-  background: url("../images/tinglado_background.jpg") fixed center no-repeat;
-  background-size: cover;
-  height: 30em;
+#services-details #construccion {
+  background-color: #e8e8e8;
 }
-*/
+
+#services-details #tinglados {
+  background-color: #003057;
+}
+
+#services-details #tinglados span {
+  color: white;
+}
+
+#services-details #piscinas {
+  background-color: #e8e8e8;
+}
+
+#services-details .info p {
+  color: white;
+  font-family: "sans-serif";
+  font-weight: 300;
+  font-size: 20px;
+}
 
 section#contact {
-  background: #f2f2f2;
+  background: #16203a;
   padding: 15px 15px 170px 15px;
   margin-bottom: 30px;
+}
+
+@media screen and (min-width: 800px) {
+  section#contact {
+    height: 100vh;
+  }
+}
+
+section#contact .section-title .title {
+  color: white;
+}
+
+section#contact .section-title .special {
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(255, 255, 255, 0.75), rgba(0, 0, 0, 0));
 }
 
 section#contact article {
@@ -441,4 +494,96 @@ footer {
   text-align: center;
   background-color: white;
   padding: 20px 20px 0 20px;
+}
+
+/* Carousel */
+.carousel-inner > .item > img {
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 1500px) {
+  .carousel-inner > .item > img {
+    height: 600px !important;
+  }
+}
+
+.carousel-img {
+  border-radius: 10px  !important;
+  height: 400px !important;
+  width: 700px;
+}
+
+.carousel-div {
+  margin-top: 40px;
+}
+
+.carousel-inner {
+  width: 100%;
+}
+
+@media screen and (min-width: 470px) and (max-width: 770px) {
+  .carousel-inner > .item > img { height: 400px !important; }
+  .carousel-inner               { height: 400px !important; }
+}
+
+@media screen and (min-width: 771px) and (max-width: 880px) {
+  .carousel-inner > .item > img { height: 300px !important; }
+  .carousel-inner               { height: 400px !important; }
+}
+
+@media screen and (max-width: 430px) {
+  .carousel-inner > .item > img { height: 300px !important; }
+  .carousel-inner               { height: 200px !important; }
+  .carousel-img { height: 200px !important; }
+}
+
+/* Fin Carousel */
+
+.see-more {
+  text-align: center;
+}
+
+.modal-dialog {
+  top: 20%;
+}
+
+.modal-content {
+  height: 400px;
+}
+
+.modal-body {
+  padding: 2px !important;
+}
+
+.modal-content .carousel-img {
+  height: 300px !important;
+}
+
+.modal-content .carousel {
+  height: 355px !important;
+}
+
+.modal-content .carousel-inner > .item > img { height: 350px !important; }
+.modal-content .carousel-inner               { height: 350px !important; }
+
+.carousel-control {
+  background: transparent !important;
+}
+
+
+/* Modal opened on high screen */
+@media screen and (min-width: 1020px) {
+  .modal-dialog {
+    width: 1000px !important;
+  }
+
+  .modal-content { height: 600px; }
+  .modal-content .carousel-inner > .item > img { height: 650px !important; }
+  .modal-content .carousel-inner               { height: 550px !important; }
+  .modal-content .carousel { height: 550px !important; }
+
+  .modal-content .carousel-img {
+    height: 1000px !important;
+    width: 1000px !important;
+  }
 }
