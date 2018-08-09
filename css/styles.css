@@ -461,6 +461,14 @@ hr.special {
   background-color: #e8e8e8;
 }
 
+#services-details #techos {
+  background-color: #003057;
+}
+
+#services-details #techos span {
+  color: white;
+}
+
 #services-details .info p {
   color: white;
   font-family: "sans-serif";
