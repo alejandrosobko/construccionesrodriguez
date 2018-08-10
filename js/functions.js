@@ -1,9 +1,9 @@
-var goToSection = function(link) {
+ var goToSection = function(link) {
     var href = link.attr('href');
 
     $('html, body').animate({
         scrollTop: $(href).offset().top - 40
-    }, 2000);
+    }, 800);
 }
 
 
@@ -67,10 +67,7 @@ $(document).keydown(function(e) {
 });
 
 
-// Changing the defaults
 window.sr = ScrollReveal({ reset: true });
-
-// Customizing a reveal set
 const revealOptions = { reset: false, duration: 500, delay: 0, easing: 'cubic-bezier(0.6, 0.2, 0.1, 1)'};
 sr.reveal('#services', revealOptions);
 sr.reveal('#services-details article', revealOptions);
