@@ -294,6 +294,13 @@ section span.title {
   font-size: 35px;
   display: block;
   color: #001729;
+  width: 510px;
+}
+
+@media screen and (max-width: 600px) {
+  section span.title {
+    width: 200px;
+  }
 }
 
 hr.special {
@@ -469,7 +476,20 @@ hr.special {
   color: white;
 }
 
-#services-details .info p {
+#services-details #pintura {
+  background-color: #e8e8e8;
+}
+
+
+#services-details #plomeria {
+  background-color: #003057;
+}
+
+#services-details #plomeria span, #services-details #plomeria .info {
+  color: white;
+}
+
+#services-details .info .description {
   color: white;
   font-family: "sans-serif";
   font-weight: 300;
