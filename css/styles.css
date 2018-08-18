@@ -294,11 +294,14 @@ section span.title {
   font-size: 35px;
   display: block;
   color: #001729;
+}
+
+article span.title {
   width: 510px;
 }
 
 @media screen and (max-width: 600px) {
-  section span.title {
+  article span.title {
     width: 200px;
   }
 }
