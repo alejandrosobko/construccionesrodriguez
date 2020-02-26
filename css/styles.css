@@ -2,8 +2,8 @@ a {
   text-decoration: none;
 }
 
-.hidden-content {
-  display: none;
+.logo {
+  cursor: pointer;
 }
 
 /* Default navbar */
@@ -296,6 +296,16 @@ section span.title {
   color: #001729;
 }
 
+article span.title {
+  width: 510px;
+}
+
+@media screen and (max-width: 600px) {
+  article span.title {
+    width: 200px;
+  }
+}
+
 hr.special {
   border: 0;
   height: 1px;
@@ -321,44 +331,115 @@ hr.special {
   font-size: 16px;
 }
 
-@media screen and (min-width: 1020px) {
-  section#services {
-    height: 100vh;
+
+/* Service detail */
+
+.portfolio-box {
+  position: relative;
+  display: block;
+  max-width: 650px;
+  margin: 0 auto;
+}
+
+.portfolio-box a {
+  transition: all 0.35s;
+  color: #F05F40;
+}
+
+.portfolio-box a:hover {
+  color: #eb3812;
+}
+
+.portfolio-box:hover .portfolio-box-caption {
+  opacity: 1;
+}
+
+.img-responsive {
+  display: block;
+  width: 100% !important;
+  height: 400px !important;
+}
+
+.portfolio-box .portfolio-box-caption {
+  color: white;
+  opacity: 0;
+  display: block;
+  background: rgba(240, 95, 64, 0.6);
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: all 0.35s;
+  -moz-transition: all 0.35s;
+  transition: all 0.35s;
+}
+
+.portfolio-box .portfolio-box-caption .portfolio-box-caption-content {
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+@media (min-width: 768px) {
+  .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category {
+    font-size: 16px;
   }
 }
 
-
-#services article {
-  margin-bottom: 50px;
+.portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 14px;
 }
 
-#services article img {
-  width: 100px;
-  height: 90px;;
-  margin-left: 13px;
+.portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category, .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
+  padding: 0 15px;
 }
+
+.text-faded {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+@media (min-width: 768px) {
+  .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
+    font-size: 22px;
+  }
+}
+
+.portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
+  font-size: 25px;
+}
+.portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category, .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
+  padding: 0 15px;
+}
+
+.no-padding {
+  padding: 0 !important;
+}
+
+#services .no-padding {
+  border: 1px solid white;
+}
+
+
+/* En celulares, no hay efecto hover. Siempre se ve anaranjado */
+@media (max-width: 1100px) {
+  .portfolio-box .portfolio-box-caption {
+    opacity: 1;
+  }
+}
+
+/* End */
+
 
 #services article .service-description {
   font-size: 18px;
   color: #4c3c61;
   font-weight: bold;
   margin-top: 30px;
-}
-
-#services article p {
-  margin-top: 10px;
-  display: block;
-  text-align: center;
-}
-
-@media screen and (max-width: 990px) {
-  #services article img {
-    margin-left: -5px;
-  }
-
-  #services article {
-    text-align: center;
-  }
 }
 
 #services-details article {
@@ -390,7 +471,28 @@ hr.special {
   background-color: #e8e8e8;
 }
 
-#services-details .info p {
+#services-details #techos {
+  background-color: #003057;
+}
+
+#services-details #techos span {
+  color: white;
+}
+
+#services-details #pintura {
+  background-color: #e8e8e8;
+}
+
+
+#services-details #plomeria {
+  background-color: #003057;
+}
+
+#services-details #plomeria span, #services-details #plomeria .info {
+  color: white;
+}
+
+#services-details .info .description {
   color: white;
   font-family: "sans-serif";
   font-weight: 300;
@@ -538,10 +640,6 @@ footer {
 }
 
 /* Fin Carousel */
-
-.see-more {
-  text-align: center;
-}
 
 .modal-dialog {
   top: 20%;

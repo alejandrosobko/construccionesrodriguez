@@ -1,9 +1,9 @@
-var goToSection = function(link) {
+ var goToSection = function(link) {
     var href = link.attr('href');
 
     $('html, body').animate({
-        scrollTop: $(href).offset().top - 55
-    }, 500);
+        scrollTop: $(href).offset().top - 40
+    }, 800);
 }
 
 
@@ -57,23 +57,18 @@ $(function() {
 // handle key press
 $(document).keydown(function(e) {
     if (e.keyCode === 37) {
-       // Previous
-       $(".carousel-control.left").click();
+       $(e.target).find(".carousel-control.left").click();
        return false;
     }
     if (e.keyCode === 39) {
-       // Next
-       $(".carousel-control.right").click();
+       $(e.target).find(".carousel-control.right").click();
        return false;
     }
 });
 
 
-// Changing the defaults
 window.sr = ScrollReveal({ reset: true });
-
-// Customizing a reveal set
-const revealOptions = { reset: false, duration: 500, delay: 100, easing: 'cubic-bezier(0.6, 0.2, 0.1, 1)'};
+const revealOptions = { reset: false, duration: 500, delay: 0, easing: 'cubic-bezier(0.6, 0.2, 0.1, 1)'};
 sr.reveal('#services', revealOptions);
 sr.reveal('#services-details article', revealOptions);
 sr.reveal('#contact', revealOptions);
