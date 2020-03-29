@@ -49,6 +49,11 @@ $(function() {
         });
 
         $carousel.find('.item')[0].className = 'item active';
+        if (event.toElement.classList.contains('vertical-img')) {
+            $('#imagemodal').addClass('vertical-mode')
+        } else {
+            $('#imagemodal').removeClass('vertical-mode')
+        }
         $('#imagemodal').modal('show');
     });
 });
