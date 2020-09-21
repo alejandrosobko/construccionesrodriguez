@@ -288,7 +288,7 @@ section#about {
   text-align: center;
 }
 
-section span.title {
+section h1.title {
   font-family: 'Montserrat', sans-serif;
   font-weight: 500;
   font-size: 35px;
@@ -296,12 +296,12 @@ section span.title {
   color: #001729;
 }
 
-article span.title {
+article h1.title {
   width: 510px;
 }
 
 @media screen and (max-width: 600px) {
-  article span.title {
+  article h1.title {
     width: 200px;
   }
 }
@@ -322,7 +322,7 @@ hr.special {
   margin-bottom: 50px;
 }
 
-.custom-orange-border span {
+.custom-orange-border h1 {
   margin-left: 10px;
 }
 
@@ -463,7 +463,7 @@ hr.special {
   background-color: #003057;
 }
 
-#services-details #tinglados span {
+#services-details #tinglados h1 {
   color: white;
 }
 
@@ -475,7 +475,7 @@ hr.special {
   background-color: #003057;
 }
 
-#services-details #techos span {
+#services-details #techos h1 {
   color: white;
 }
 
@@ -488,7 +488,7 @@ hr.special {
   background-color: #003057;
 }
 
-#services-details #plomeria span, #services-details #plomeria .info {
+#services-details #plomeria h1, #services-details #plomeria .info {
   color: white;
 }
 
