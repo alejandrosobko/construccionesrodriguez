@@ -277,12 +277,14 @@ hr.special {
 
 #services .boxes {
   max-width: 1400px;
+  margin: 0 auto;
 }
 
 #services .boxes .box {
   padding: 15px;
   width: 33%;
   max-width: 465px;
+  margin-top: 40px;
 }
 
 #services li {
