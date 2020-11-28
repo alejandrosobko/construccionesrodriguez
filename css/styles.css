@@ -285,6 +285,14 @@ hr.special {
   max-width: 465px;
 }
 
+#services li {
+  font-size: 16px;
+}
+
+.description {
+  font-size: 16px;
+}
+
 section#contact {
   background: #16203a;
   padding: 15px 15px 170px 15px;
@@ -457,5 +465,5 @@ footer {
 }
 
 .carousel img.vertical {
-  width: 400px;
+  width: 400px !important;
 }
