@@ -7,7 +7,7 @@
 }
 
 
-// go to section on click navbar item
+// go to section by clicking a navbar item
 $(document).on('click', '.nav li', function (event) {
     event.preventDefault();
     var link = $(event.currentTarget).find('a');
@@ -16,14 +16,14 @@ $(document).on('click', '.nav li', function (event) {
 });
 
 
-// go to top on click logo
+// go to top by clicking logo
 $(".logo").click(function() {
   $("html, body").animate({ scrollTop: 0 }, "slow");
   return false;
 });
 
 
-// open carousel in a modal on click an image
+// open carousel in a modal by clicking an image
 $(function() {
     $('.pop').on('click', function(event) {
         event.preventDefault();

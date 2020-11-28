@@ -275,9 +275,14 @@ hr.special {
   margin-bottom: 40px;
 }
 
+#services .boxes {
+  max-width: 1400px;
+}
+
 #services .boxes .box {
   padding: 15px;
   width: 33%;
+  max-width: 465px;
 }
 
 section#contact {
@@ -315,8 +320,11 @@ article#form #submit {
   background-color: #fc764d;
   border: 1px #fc764d solid;
   border-radius: 3px;
-  width: 90px;
-  height: 30px;
+  width: 140px;
+  height: 40px;
+  margin-top: 20px;
+  font-size: 16px;
+  font-weight: bold;
 }
 
 article#form #submit:hover {
@@ -389,7 +397,7 @@ footer {
 }
 
 .modal-dialog {
-  top: 20%;
+  top: 10%;
 }
 
 .modal-content {
@@ -440,4 +448,14 @@ footer {
 
 .carousel-inner {
   height: inherit;
+}
+
+#imagemodal .modal-dialog {
+  top: 10%;
+  width: 80% !important;
+  height: 50%;
+}
+
+.carousel img.vertical {
+  width: 400px;
 }

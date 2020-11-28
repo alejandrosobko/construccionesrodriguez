@@ -33,9 +33,16 @@
   header section #title {
     font-size: 30px;
   }
+
   header section #subtitle {
     font-size: 20px;
   }
+
+  #imagemodal .modal-dialog {
+    width: inherit !important;
+    height: inherit;
+  }
+
 }
 
 @media screen and (max-width: 430px) {
@@ -52,35 +59,4 @@
 @media screen and (min-width: 771px) and (max-width: 880px) {
   .carousel-inner > .item > img { height: 300px !important; }
   .carousel-inner               { height: 400px !important; }
-}
-
-@media screen and (min-width: 800px) {
-  .vertical-img {
-    height: 540px !important;
-    width: 370px !important;
-  }
-
-  .vertical-mode .modal-content {
-    height: 750px;
-    width: 60%;
-    margin: 0 auto;
-  }
-
-  .vertical-mode .modal-content .carousel {
-    height: 750px !important;
-  }
-
-  .vertical-mode .modal-content .carousel-inner {
-    height: 750px !important;
-  }
-  .vertical-mode .modal-content .carousel-inner > .item > img { height: 700px !important; }
-
-  .vertical-mode .vertical-img {
-    height: 700px !important;
-    width: 560px !important;
-  }
-
-  .vertical-mode .modal-dialog {
-    top: 5%;
-  }
 }
