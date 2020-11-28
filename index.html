@@ -23,6 +23,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="shortcut icon" type="image/png" href="images/icons/favicon.png"/>
   <link rel="stylesheet" type="text/css" media="screen" href="css/styles.css" />
+  <link rel="stylesheet" type="text/css" media="screen" href="css/mobile.css" />
+  <link rel="stylesheet" type="text/css" media="screen" href="css/effects.css" />
   <link href="css/bootstrap.min.css" rel="stylesheet" >
   <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400" rel="stylesheet">
 </head>
@@ -79,122 +81,26 @@
         <h1 class="title">Juan Carlos Rodriguez</h1>
         <hr class="special">
       </div>
-      <div class="row">
-        <article>
-          <p>
-            Dediqué toda mi vida a la construcción, desde arreglos, modificaciones hasta construcciones completas. Realizo construcciones de casas, techos, piscinas, parrillas, tinglados, arreglos generales, pintura y cualquier otro tipo de mejoras.
-          </p>
-          <p>
-            Mi experiencia y clientes garantizan los trabajos que realizo.
-          </p>
-        </article>
-      </div>
+      <article class="bio">
+        <p>
+          Dediqué toda mi vida a la construcción, desde arreglos, modificaciones hasta construcciones completas. Realizo construcciones de casas, techos, piscinas, parrillas, tinglados, arreglos generales, pintura y cualquier otro tipo de mejoras.
+        </p>
+        <p>
+          Mi experiencia y clientes garantizan los trabajos que realizo.
+        </p>
+      </article>
     </section>
 
     <section id="services" class="container-fluid">
       <div class="section-title">
         <h1 class="title">Servicios</h1>
         <hr class="special">
-        <h5>Servicios de construcción de todo tipo: casas, techos, piscinas, tinglados, parrillas. Trabajos de construcción en Zona sur, Buenos Aires.</h5>
+        <h4>Servicios de construcción de todo tipo: casas, techos, piscinas, tinglados, parrillas. Trabajos de construcción en Zona sur, Buenos Aires.</h4>
       </div>
-      <div class="row">
-        <div class="col-lg-4 col-sm-6 no-padding">
-          <a href="#construccion" class="portfolio-box">
-            <img class="img-responsive" src="images/services/service_construccion.jpg" alt="">
-            <div class="portfolio-box-caption">
-              <div class="portfolio-box-caption-content">
-                <div class="project-category text-faded">SERVICIO</div>
-                <div class="project-name">Construcción</div>
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="col-lg-4 col-sm-6 no-padding">
-          <a href="#tinglados" class="portfolio-box">
-            <img class="img-responsive" src="images/services/service_tinglado.jpg" alt="">
-            <div class="portfolio-box-caption">
-              <div class="portfolio-box-caption-content">
-                <div class="project-category text-faded">SERVICIO</div>
-                <div class="project-name">Tinglados</div>
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="col-lg-4 col-sm-6 no-padding">
-          <a href="#piscinas" class="portfolio-box">
-            <img class="img-responsive" src="images/services/service_piscinas.jpg" alt="">
-            <div class="portfolio-box-caption">
-              <div class="portfolio-box-caption-content">
-                <div class="project-category text-faded">SERVICIO</div>
-                <div class="project-name">Piscinas</div>
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="col-lg-4 col-sm-6 no-padding">
-          <a href="#techos" class="portfolio-box">
-            <img class="img-responsive" src="images/services/service_techos.jpg" alt="">
-            <div class="portfolio-box-caption">
-              <div class="portfolio-box-caption-content">
-                <div class="project-category text-faded">SERVICIO</div>
-                <div class="project-name">Techos</div>
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="col-lg-4 col-sm-6 no-padding">
-          <a href="#pintura" class="portfolio-box">
-            <img class="img-responsive" src="images/services/service_pintura.jpg" alt="">
-            <div class="portfolio-box-caption">
-              <div class="portfolio-box-caption-content">
-                <div class="project-category text-faded">SERVICIO</div>
-                <div class="project-name">Pintura</div>
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="col-lg-4 col-sm-6 no-padding">
-          <a href="#plomeria" class="portfolio-box">
-            <img class="img-responsive" src="images/services/service_plomeria.jpg" alt="">
-            <div class="portfolio-box-caption">
-              <div class="portfolio-box-caption-content">
-                <div class="project-category text-faded">SERVICIO</div>
-                <div class="project-name">Plomería y gas</div>
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="col-lg-4 col-sm-6 no-padding">
-          <a href="#planos" class="portfolio-box">
-            <img class="img-responsive" src="images/services/service_planos.jpg" alt="">
-            <div class="portfolio-box-caption">
-              <div class="portfolio-box-caption-content">
-                <div class="project-category text-faded">SERVICIO</div>
-                <div class="project-name">Asesoramiento técnico, planos y dirección de obra</div>
-              </div>
-            </div>
-          </a>
-        </div>
-      </div>
-    </section>
 
-    <section id="services-details">
-      <article id="construccion" class="row">
-        <div class="col-xs-12 col-sm-5">
-          <div class="custom-orange-border">
-            <div>
-              <h1 class="title">Construcción</h1>
-            </div>
-          </div>
-          <div class="info ">
-            <span class="description" style="color: black;">
-              Construcción y reparaciones en general, ofreciendo servicios profesionales ajustables a las necesidades de los clientes.
-              Construcciones completas de casas, galpones, reparaciones, ampliaciones o cualquier pedido personal.
-            </span>
-          </div>
-        </div>
-
-        <div class="col-xs-12 col-sm-7">
+      <div class="boxes">
+        <div id="construccion" class="box col-xs-12 col-sm-4">
+          <h3 class="title">Construcción</h3>
           <div class="carousel-div">
             <div id="carousel-example-generic1" class="carousel slide" data-ride="carousel">
               <!-- Wrapper for slides -->
@@ -255,23 +161,16 @@
               </a>
             </div>
           </div>
+          <div class="info">
+            <p class="description">
+              Construcción y reparaciones en general, ofreciendo servicios profesionales ajustables a las necesidades de los clientes.
+              Construcciones completas de casas, galpones, reparaciones, ampliaciones o cualquier pedido personal.
+            </p>
+          </div>
         </div>
-      </article>
 
-      <article id="tinglados" class="row">
-        <div class="col-xs-12 col-sm-5">
-          <div class="custom-orange-border">
-            <div>
-              <h1 class="title">Tinglados</h1>
-            </div>
-          </div>
-          <div class="info inline">
-            <span class="description">
-              Fabricación y montaje de la estructura metálica. Techos parabólicos y a dos aguas. Desarrollo según la necesidad y pedido.
-            </span>
-          </div>
-        </div>
-        <div class="col-xs-12 col-sm-7">
+        <div id="tinglados" class="box col-xs-12 col-sm-4">
+          <h3 class="title">Tinglados</h3>
           <div class="inline carousel-div">
             <div id="carousel-example-generic2" class="carousel slide" data-ride="carousel">
               <!-- Wrapper for slides -->
@@ -304,23 +203,15 @@
               </a>
             </div>
           </div>
-        </div>
-      </article>
-
-      <article id="piscinas" class="row">
-        <div class="col-xs-12 col-sm-5">
-          <div class="custom-orange-border">
-            <div>
-              <h1 class="title">Piscinas</h1>
-            </div>
-          </div>
           <div class="info">
-            <span class="description" style="color: black;">
-              Construcción de piscinas de hormigón armado. El modelo de la misma es de acuerdo a las necesidades de cada cliente, ofreciendo variantes de dimensiones, formas, equipamiento y calidad de materiales.
-            </span>
+            <p class="description">
+              Fabricación y montaje de la estructura metálica. Techos parabólicos y a dos aguas. Desarrollo según la necesidad y pedido.
+            </p>
           </div>
         </div>
-        <div class="col-xs-12 col-sm-7">
+
+        <div id="piscinas" class="box col-xs-12 col-sm-4">
+          <h3 class="title">Piscinas</h3>
           <div class="carousel-div">
             <div id="carousel-example-generic3" class="carousel slide" data-ride="carousel">
               <!-- Wrapper for slides -->
@@ -361,24 +252,15 @@
               </a>
             </div>
           </div>
-        </div>
-      </article>
-
-      <article id="techos" class="row">
-        <div class="col-xs-12 col-sm-5">
-          <div class="custom-orange-border">
-            <div>
-              <h1 class="title">Techos</h1>
-            </div>
-          </div>
-          <div class="info ">
-            <span class="description">
-              Construcción y reparación de todo techos, ya sea tejas francesas o coloniales y chapa.
-            </span>
+          <div class="info">
+            <p class="description">
+              Construcción de piscinas de hormigón armado. El modelo de la misma es de acuerdo a las necesidades de cada cliente, ofreciendo variantes de dimensiones, formas, equipamiento y calidad de materiales.
+            </p>
           </div>
         </div>
 
-        <div class="col-xs-12 col-sm-7">
+        <div id="techos" class="box col-xs-12 col-sm-4">
+          <h3 class="title">Techos</h3>
           <div class="carousel-div">
             <div id="carousel-example-generic4" class="carousel slide" data-ride="carousel">
               <!-- Wrapper for slides -->
@@ -407,25 +289,15 @@
               </a>
             </div>
           </div>
-        </div>
-      </article>
-
-      <article id="pintura" class="row">
-        <div class="col-xs-12 col-sm-5">
-          <div class="custom-orange-border">
-            <div>
-              <h1 class="title">Pintura</h1>
-            </div>
-          </div>
-          <div class="info ">
-            <span class="description" style="color: black;">
-              Trabajos de pintura interior y exterior para domicilios, edificios, oficinas, locales, etc.
-              También pintura en altura y revestimiento plastico texturado.
-            </span>
+          <div class="info">
+            <p class="description">
+              Construcción y reparación de todo techos, ya sea tejas francesas o coloniales y chapa.
+            </p>
           </div>
         </div>
 
-        <div class="col-xs-12 col-sm-7">
+        <div id="pintura" class="box col-xs-12 col-sm-4">
+          <h3 class="title">Pintura</h3>
           <div class="carousel-div">
             <div id="carousel-example-generic5" class="carousel slide" data-ride="carousel">
               <!-- Wrapper for slides -->
@@ -458,61 +330,16 @@
               </a>
             </div>
           </div>
-        </div>
-      </article>
-      <article id="plomeria" class="row">
-        <div class="col-xs-12">
-          <div class="custom-orange-border">
-            <div>
-              <h1 class="title">Plomería y gas</h1>
-            </div>
-          </div>
           <div class="info">
-            <div class="col-xs-12 col-sm-6">
-              <span class="description">
-                <strong>Plomería</strong>
-                <ul>
-                  <li>Instalaciones de agua caliente y fria en baños y cocina.</li>
-                  <li>Colocación de artefactos.</li>
-                  <li>Colectores.</li>
-                  <li>Columnas.</li>
-                  <li>Trabajos Generales.</li>
-                </ul>
-              </span>
-            </div>
-            <div class="col-xs-12 col-sm-6">
-              <span class="description">
-                <strong>Gas</strong>
-                <ul>
-                  <li>Limpieza y colocación.</li>
-                  <li>Estufas.</li>
-                  <li>Cocinas.</li>
-                  <li>Termo tanques.</li>
-                  <li>Calefones.</li>
-                  <li>Hermeticidad de cañerías</li>
-                  <li>Revisión de Calderas Peisa y Baxi</li>
-                </ul>
-              </span>
-            </div>
+            <p class="description">
+              Trabajos de pintura interior y exterior para domicilios, edificios, oficinas, locales, etc.
+              También pintura en altura y revestimiento plastico texturado.
+            </p>
           </div>
         </div>
-      </article>
-      <article id="planos" class="row">
-        <div class="col-xs-12 col-sm-5">
-          <div class="custom-orange-border">
-            <div>
-              <h1 class="title">Planos y dirección de obra</h1>
-            </div>
-          </div>
-          <div class="info">
-            <div class="col-xs-12">
-              <span class="description" style="color: black;">
-                Realizo trabajos de asesoramiento, planificación y dirección de obras, estableciendo un nexo permanente entre lo estratégico a mediano plazo y lo cotidiano, resolviendo la agenda de temas urgentes. En este sentido, evaluamos el objetivo técnico, sustentable y financiero para la ejecución de los proyectos.
-              </span>
-            </div>
-          </div>
-        </div>
-        <div class="col-xs-12 col-sm-7">
+
+        <div id="planos" class="box col-xs-12 col-sm-4">
+          <h3 class="title">Planos y dirección de obra</h3>
           <div class="carousel-div">
             <div id="carousel-example-generic6" class="carousel slide" data-ride="carousel">
               <!-- Wrapper for slides -->
@@ -533,8 +360,45 @@
               </a>
             </div>
           </div>
+          <div class="info">
+            <p class="description">
+              Realizo trabajos de asesoramiento, planificación y dirección de obras, estableciendo un nexo permanente entre lo estratégico a mediano plazo y lo cotidiano, resolviendo la agenda de temas urgentes. En este sentido, evaluamos el objetivo técnico, sustentable y financiero para la ejecución de los proyectos.
+            </p>
+          </div>
         </div>
-      </article>
+
+        <div id="plomeria" class="box col-xs-12 col-sm-4">
+          <h3 class="title">Plomería y gas</h3>
+          <div class="info">
+            <div class="col-xs-12 col-sm-6">
+              <p class="description">
+                <strong>Plomería</strong>
+                <ul>
+                  <li>Instalaciones de agua caliente y fria en baños y cocina.</li>
+                  <li>Colocación de artefactos.</li>
+                  <li>Colectores.</li>
+                  <li>Columnas.</li>
+                  <li>Trabajos Generales.</li>
+                </ul>
+              </p>
+            </div>
+            <div class="col-xs-12 col-sm-6">
+              <p class="description">
+                <strong>Gas</strong>
+                <ul>
+                  <li>Limpieza y colocación.</li>
+                  <li>Estufas.</li>
+                  <li>Cocinas.</li>
+                  <li>Termo tanques.</li>
+                  <li>Calefones.</li>
+                  <li>Hermeticidad de cañerías</li>
+                  <li>Revisión de Calderas Peisa y Baxi</li>
+                </ul>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <section id="contact" class="row">

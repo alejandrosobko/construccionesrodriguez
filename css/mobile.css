@@ -1,0 +1,86 @@
+@media screen and (max-width: 800px) {
+  .carousel-div {
+    height: auto;
+  }
+
+  #services .boxes .box {
+    padding: 0;
+    width: 100%;
+  }
+
+  div#content {
+    padding-top: 20%;
+  }
+
+  article.bio {
+    padding: 0;
+  }
+
+  section#contact {
+    height: auto;
+  }
+
+  article#cellphone {
+    margin-right: 0;
+    margin-left: 0;
+    margin-bottom: 10px;
+  }
+
+  article#cellphone #numbers {
+    text-align: center;
+  }
+
+  header section #title {
+    font-size: 30px;
+  }
+  header section #subtitle {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .carousel-inner > .item > img { height: 300px !important; }
+  .carousel-inner               { height: 200px !important; }
+  .carousel-img { height: 200px !important; }
+}
+
+@media screen and (min-width: 470px) and (max-width: 770px) {
+  .carousel-inner > .item > img { height: 400px !important; }
+  .carousel-inner               { height: 400px !important; }
+}
+
+@media screen and (min-width: 771px) and (max-width: 880px) {
+  .carousel-inner > .item > img { height: 300px !important; }
+  .carousel-inner               { height: 400px !important; }
+}
+
+@media screen and (min-width: 800px) {
+  .vertical-img {
+    height: 540px !important;
+    width: 370px !important;
+  }
+
+  .vertical-mode .modal-content {
+    height: 750px;
+    width: 60%;
+    margin: 0 auto;
+  }
+
+  .vertical-mode .modal-content .carousel {
+    height: 750px !important;
+  }
+
+  .vertical-mode .modal-content .carousel-inner {
+    height: 750px !important;
+  }
+  .vertical-mode .modal-content .carousel-inner > .item > img { height: 700px !important; }
+
+  .vertical-mode .vertical-img {
+    height: 700px !important;
+    width: 560px !important;
+  }
+
+  .vertical-mode .modal-dialog {
+    top: 5%;
+  }
+}

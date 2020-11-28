@@ -16,14 +16,6 @@ $(document).on('click', '.nav li', function (event) {
 });
 
 
-// go to specific section
-$(document).on('click', 'section#services a', function (event) {
-    event.preventDefault();
-    var link = $(event.currentTarget);
-    goToSection(link);
-});
-
-
 // go to top on click logo
 $(".logo").click(function() {
   $("html, body").animate({ scrollTop: 0 }, "slow");
@@ -74,6 +66,5 @@ $(document).keydown(function(e) {
 
 window.sr = ScrollReveal({ reset: true });
 const revealOptions = { reset: false, duration: 500, delay: 0, easing: 'cubic-bezier(0.6, 0.2, 0.1, 1)'};
-sr.reveal('#services', revealOptions);
-sr.reveal('#services-details article', revealOptions);
-sr.reveal('#contact', revealOptions);
+sr.reveal('#services .box', revealOptions);
+sr.reveal('#contact article', revealOptions);
