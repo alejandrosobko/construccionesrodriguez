@@ -17,11 +17,8 @@ $(document).on('click', '.nav li', function (event) {
 
 
 // go to top by clicking logo
-$(".logo").click(function() {
-  $("html, body").animate({ scrollTop: 0 }, "slow");
-  return false;
-});
-
+$(".logo").click(function() { $("html, body").animate({ scrollTop: 0 }, "slow");});
+$("#goToTop").click(function() { $("html, body").animate({ scrollTop: 0 }, "slow");});
 
 // open carousel in a modal by clicking an image
 $(function() {
@@ -63,6 +60,13 @@ $(document).keydown(function(e) {
     }
 });
 
+var msgShown = false;
+$(document).bind("mouseleave", function(e) {
+    if (e.pageY - $(window).scrollTop() <= 1 && !msgShown) {
+        $('#wa-widget-send-button').click();
+        msgShown = true;
+    }
+});
 
 window.sr = ScrollReveal({ reset: true });
 const revealOptions = { reset: false, duration: 500, delay: 0, easing: 'cubic-bezier(0.6, 0.2, 0.1, 1)'};

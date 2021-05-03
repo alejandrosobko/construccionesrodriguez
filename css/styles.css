@@ -236,9 +236,9 @@ article.bio {
 }
 
 .section-title {
-  margin-top: 50px;
-  margin-bottom: 50px;
   text-align: center;
+  width: 60%;
+  margin: 0 auto 20px;
 }
 
 section h1.title {
@@ -378,7 +378,6 @@ article#cellphone img {
 footer {
   text-align: center;
   background-color: white;
-  padding: 20px 20px 0 20px;
 }
 
 .carousel-inner > .item > img {
