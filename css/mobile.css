@@ -1,4 +1,7 @@
 @media screen and (max-width: 800px) {
+  .section-title {
+    width: 100%;
+  }
   .carousel-div {
     height: auto;
   }
