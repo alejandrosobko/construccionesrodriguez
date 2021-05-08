@@ -1,11 +1,10 @@
- var goToSection = function(link) {
+var goToSection = function(link) {
     var href = link.attr('href');
 
     $('html, body').animate({
-        scrollTop: $(href).offset().top - 40
+        scrollTop: href ? $(href).offset().top - 40 : 0
     }, 800);
 }
-
 
 // go to section by clicking a navbar item
 $(document).on('click', '.nav li', function (event) {
@@ -15,10 +14,8 @@ $(document).on('click', '.nav li', function (event) {
     $('#nav-check').prop('checked', false);
 });
 
-
 // go to top by clicking logo
 $(".logo").click(function() { $("html, body").animate({ scrollTop: 0 }, "slow");});
-$("#goToTop").click(function() { $("html, body").animate({ scrollTop: 0 }, "slow");});
 
 // open carousel in a modal by clicking an image
 $(function() {
