@@ -205,6 +205,7 @@ header section #title {
 
 header section #subtitle {
   display: block;
+  font-style: italic;
   font-size: 25px;
   -webkit-animation: fadein 4s; /* Safari, Chrome and Opera > 12.1 */
      -moz-animation: fadein 4s; /* Firefox < 16 */
