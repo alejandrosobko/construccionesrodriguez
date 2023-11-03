@@ -246,16 +246,25 @@ article.bio {
   margin: 0 auto 20px;
 }
 
-section h1.title {
+.section-title h1 {
+  font-size: 40px !important;
+}
+
+.section-title h2 {
+  font-size: 20px !important;
+}
+
+section .title {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
-  font-size: 40px;
+  font-size: 30px;
   display: block;
   color: #001729;
 }
 
-article h1.title {
+article .title {
   width: 510px;
+  font-size: 30px;
 }
 
 hr.special {
