@@ -303,6 +303,7 @@ hr.special {
   width: 33%;
   max-width: 465px;
   margin-top: 40px;
+  min-height: 600px;
 }
 
 #services li {
