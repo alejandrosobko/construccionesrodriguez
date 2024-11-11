@@ -504,3 +504,17 @@ footer {
 .carousel img.vertical {
   width: 400px !important;
 }
+
+.steel-frame-page.steel-frame-container {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.steel-frame-page.steel-frame-container img {
+  width: 300px;
+  cursor: pointer;
+}

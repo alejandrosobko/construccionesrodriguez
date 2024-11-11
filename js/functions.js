@@ -79,3 +79,8 @@ const revealOptions = {
 };
 sr.reveal("#services .box", revealOptions);
 sr.reveal("#contact article", revealOptions);
+
+// on click steel frame images it opens in a new tab
+$(".steel-frame-page img").click(function () {
+  window.open(this.src);
+});
